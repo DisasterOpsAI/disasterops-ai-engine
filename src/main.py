@@ -32,7 +32,7 @@ async def health_check():
     """Health check endpoint."""
     return {
         "status": "healthy",
-        "version": "0.1.0",
+        "version": "0.0.1",
         "message": "DisasterOps AI Engine is operational",
     }
 
