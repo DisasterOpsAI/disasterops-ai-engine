@@ -27,6 +27,16 @@ async def root():
     }
 
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint."""
+    return {
+        "status": "healthy",
+        "version": "0.0.1",
+        "message": "DisasterOps AI Engine is operational",
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
 
