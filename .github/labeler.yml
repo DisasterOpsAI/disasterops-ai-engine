@@ -1,0 +1,77 @@
+# Configuration for the labeler action
+# https://github.com/actions/labeler
+
+# Add 'documentation' label to any changes within docs folders or markdown files
+documentation:
+  - '**/*.md'
+  - 'docs/**/*'
+  - 'README*'
+
+# Add 'ai/ml' label to AI and machine learning related files
+ai/ml:
+  - 'models/**/*'
+  - 'notebooks/**/*'
+  - '**/*.ipynb'
+  - 'training/**/*'
+  - 'inference/**/*'
+  - 'data/**/*'
+
+# Add 'python' label to Python files
+python:
+  - '**/*.py'
+  - 'src/**/*'
+  - 'lib/**/*'
+
+# Add 'dependencies' label to dependency files
+dependencies:
+  - 'requirements*.txt'
+  - 'Pipfile'
+  - 'Pipfile.lock'
+  - 'pyproject.toml'
+  - 'poetry.lock'
+  - 'environment.yml'
+  - 'conda.yml'
+
+# Add 'ci/cd' label to GitHub Actions and deployment files
+ci/cd:
+  - '.github/**/*'
+  - 'Dockerfile*'
+  - 'docker-compose*'
+
+# Add 'configuration' label to config files
+configuration:
+  - '**/*.config.py'
+  - '**/*.config.yaml'
+  - '**/*.config.yml'
+  - '.env*'
+  - 'config/**/*'
+  - '**/*.yaml'
+  - '**/*.yml'
+  - '**/*.json'
+  - 'pyproject.toml'
+  - 'setup.py'
+  - 'setup.cfg'
+
+# Add 'tests' label to test files
+tests:
+  - 'test/**/*'
+  - 'tests/**/*'
+  - '**/*test*.py'
+  - '**/*_test.py'
+  - '**/test_*.py'
+
+# Add 'scripts' label to script files
+scripts:
+  - 'scripts/**/*'
+  - '**/*.sh'
+  - '**/*.bash'
+  - 'bin/**/*'
+
+# Add 'linting' label to linting configuration
+linting:
+  - '.ruff.toml'
+  - 'ruff.toml'
+  - '.flake8'
+  - '.pylintrc'
+  - 'mypy.ini'
+  - '.pre-commit-config.yaml'
